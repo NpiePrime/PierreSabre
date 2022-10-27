@@ -1,21 +1,21 @@
 package personnages;
 
-public class humain {
+public class Humain {
 	private String nom;
 	private String boissonFavorite;
 	private int argent;
-	public humain(String nom, String boissonFavorite, int argent) {
+	public Humain(String nom, String boissonFavorite, int argent) {
 		super();
 		this.nom = nom;
 		this.boissonFavorite = boissonFavorite;
 		this.argent = argent;
 	}
 
-	public String getNom() {
+	protected String getNom() {
 		return nom;
 	}
 
-	public int getArgent() {
+	protected int getArgent() {
 		return argent;
 	}
 
@@ -41,22 +41,22 @@ public class humain {
 		}
 	}
 
-	public int gagnerArgent(int gain) {
+	protected int gagnerArgent(int gain) {
 		return argent += gain;
 
 	}
 
-	public int perdreArgent(int perte) {
+	protected int perdreArgent(int perte) {
 		return argent -= perte;
 	}
-public static void main(String[] args) {
-	humain prof = new humain("prof", "kombucha", 54);
-	prof.direBonjour();
-	prof.acheter("une boisson", 12);
-	prof.boire();
-	prof.acheter("un jeu", 2);
-	prof.acheter("un kimono", 50);
-	
-	
-}
+
+	public static void main(String[] args) {
+		Humain prof = new Humain("prof", "kombucha", 54);
+		prof.direBonjour();
+		prof.acheter("une boisson", 12);
+		prof.boire();
+		prof.acheter("un jeu", 2);
+		prof.acheter("un kimono", 50);
+
+	}
 }
