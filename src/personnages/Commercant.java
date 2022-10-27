@@ -19,7 +19,7 @@ public class Commercant extends Humain{
 	}
 
 	public static void main(String[] args) {
-		Commercant marco = new Commercant("Marco",  20);
+		Commercant marco = new Commercant("Marco",  15);
 		marco.direBonjour();
 		marco.seFaireExtorquer();
 		marco.recevoir(15);
