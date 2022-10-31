@@ -51,7 +51,7 @@ public class Humain {
 	}
 
 	public static void main(String[] args) {
-		Humain prof = new Humain("prof", "kombucha", 54);
+		Humain prof = new Humain("Prof", "kombucha", 54);
 		prof.direBonjour();
 		prof.acheter("une boisson", 12);
 		prof.boire();
