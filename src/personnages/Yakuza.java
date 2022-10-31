@@ -15,9 +15,9 @@ public class Yakuza extends Humain {
 		final int argentVol = commercant.getArgent();
 		parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là?");
 		parler(commercant.getNom() + ", si tu tiens à la vie, donne moi ta bourse !");
-		gagnerArgent(commercant.getArgent());
 		commercant.seFaireExtorquer();
-		parler("J'ai piqué les " + argentVol + " de " + commercant.getNom() + ", ce qui me fait " + getArgent() + " sous dans ma poche. Hi! Hi!");
+		gagnerArgent(commercant.getArgent());
+		parler("J'ai piqué les " + argentVol + " sous de " + commercant.getNom() + ", ce qui me fait " + getArgent() + " sous dans ma poche. Hi! Hi!");
 		reputation ++;
 	}
 	public static void main(String[] args) {
